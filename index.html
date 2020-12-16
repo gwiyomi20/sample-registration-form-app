@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <title>Registration Form</title>
+ <link href="css/style.css" rel="stylesheet" />
+<style>
+
+* {
+   margin: 0;
+   padding: 0;
+  }
+
+body {
+      background-image: url(../picture/pexels-riccardo-bertolo-4245826.jpg);
+      background-position: center;
+      background-size: cover;
+      font-family: sans-serif;
+      }
+
+h1 {
+   text-align: center;
+   padding: 20px;
+   font-color: #ffffff;
+   font-style: sans-serif;
+   text-decoration: underline;
+   }
+
+h2 {
+    text-align: center;
+    padding: 20px;
+   }
+
+.register {
+           width: 500px;
+           margin: 0px 0px 0px 430px;
+           color: #030303;
+           font-size: 18px;
+           padding: 30px;
+           border-radius: 10px;
+          }
+
+#register {
+          margin-left: 50px;
+          }
+
+#name {
+       width: 300px;
+       border: none;
+       border-raadius;
+       outline: 0;
+       padding: 7px;
+       }
+
+#ph {
+     width: 65px;
+     padding: 7px;
+     border: none;
+     border-radius: 3px;
+     outline: 0;
+     }
+
+#num {
+      width: 230px;
+      padding: 7px;
+      border: none;
+      border-radius: 3px;
+      outline: 0;
+      }
+
+#sub {
+      width: 200px;
+      padding: 7px;
+      font-size: 16px;
+      font-family: sans-serif;
+      font-style: italic;
+      font-weight: 600;
+      border: none;
+      border-radius: 3px;
+      outline: 0;
+      color: black;
+      display: inline-block;
+      cursor: pointer;
+      background-color: white;
+      transition: 0.25px;
+      }
+
+#sub:hover {
+            background-color: #008CBA;
+      
+.radio input {
+              width: 20px;
+              height: 20px;
+              border-radius: 45%;
+              cursor: pointer;
+              outline: none;
+              }
+      
+</style>
+ 
+</head>
+
+<body>
+     <img src ="pexels-riccardo-bertolo-4245826.jpg">
+
+      <h1>Registration Form</h1>
+       <div class="register">
+      <form method="post" id="register" action="">
+
+         <label> First Name : </label><br>
+           <input type="text" name="Fname" id="name"
+           placeholder="Enter Firstname"><br><br>
+
+         <label> Last Name : </label><br>
+           <input type="text" name="lname" id="name"
+           placeholder="Enter Lastname"><br><br>
+
+         <label> Mobile Number : </label><br>
+          <select id="ph">
+              <option>+61</option>
+              <option>+62</option>
+              <option>+63</option>
+         </select>
+           <input type="number" name="Mnum" id="num"
+           placeholder="Enter Mobile Number"><br><br>
+
+         <label> Email : </label><br>
+           <input type="email" name="email" id="name"
+           placeholder="Enter Email"><br><br>
+
+         <label> Password : </label><br>
+           <input type="password" name="pass" id="name"
+           placeholder="Enter Password"><br><br>
+
+         <label> Re-enter Password : </label><br>
+           <input type="text" name="pass" id="name"
+           placeholder="Re-enter Password"><br><br>
+
+        <form action="">
+             <input type="radio" name="gender" value="male">Male &nbsp; &nbsp; &nbsp;
+             <input type="radio" name="gender" value="female">Female<br><br>
+         </from>             
+
+         <input type="submit" value="Submit" id="sub">
+
+
+      </form>
+      </div>
+</body>
+</html>
